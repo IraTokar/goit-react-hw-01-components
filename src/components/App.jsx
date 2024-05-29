@@ -14,12 +14,14 @@ import TransactionHistory from './TransactionHistory/TransactionHistory';
 
 
 export default function App() {
-  return <>
+  return (
+    <>
     <Profile user={user} />
     <Statistics title="Upload stats" stats={data} />
     <FriendList friends={friends} />
     <TransactionHistory items={items} />
-  </>
+    </>
+  )
 
 }
 
