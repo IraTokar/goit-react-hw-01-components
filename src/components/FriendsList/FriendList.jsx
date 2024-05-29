@@ -12,4 +12,4 @@ const FriendList = ({ friends }) => {
         )   
 }
 
-export default FriendList
+export default FriendList;

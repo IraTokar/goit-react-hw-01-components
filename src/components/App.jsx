@@ -1,14 +1,14 @@
 import user from '../data/user.json';
-import Profile from './profile/Profile';
+import Profile from './Profile/Profile';
 
 import data from '../data/data.json';
-import Statistics from './statiscs/Statistics';
+import Statistics from './Statistics/Statistics';
 
 import friends from '../data/friends.json';
-import FriendList from './friendlist/FriendList';
+import FriendList from './FriendsList/FriendList';
 
-// import transactions from '../data/transactions.json';
-// import TransactionHistory from './transactionhistory/TransactionHistory';
+import transactions from '../data/transactions.json';
+import TransactionHistory from './TransactionHistory/TransactionHistory';
 
 
 
@@ -18,7 +18,7 @@ export default function App() {
     <Profile user={user} />
     <Statistics title="Upload stats" stats={data} />
     <FriendList friends={friends} />
-    {/* <TransactionHistory items={transactions} /> */}
+    <TransactionHistory items={transactions} />
   </>
 
 }

@@ -26,7 +26,7 @@ const TransactionHistory = ({ transactions }) => {
     )
 }
 
-export default TransactionHistory
+export default TransactionHistory;
 
 
 
