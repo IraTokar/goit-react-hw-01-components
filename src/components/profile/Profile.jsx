@@ -1,6 +1,6 @@
 import { ProfileWrap, Description, UserAvatar, Name, Tag, Location, StatsWrap, StatsItem, Label, Quantity } from './Profile.styled';
 
-export function Profile({ username, tag, location, avatar, stats }) {
+const Profile = ({ username, tag, location, avatar, stats }) => {
   return (
     <ProfileWrap>
       <Description>
@@ -30,4 +30,4 @@ export function Profile({ username, tag, location, avatar, stats }) {
   );
 }
 
-// export default Profile;
+export default Profile;
