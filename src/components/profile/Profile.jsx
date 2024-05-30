@@ -1,8 +1,7 @@
 import {ProfileWrap, Description, UserAvatar, Name, Tag, Location, StatsWrap, StatsItem, Label, Quantity} from './Profile.styled'
 
 
-const Profile = ({user: {username,tag,location,avatar,stats}
-}) => {
+const Profile = ({username,tag,location,avatar,stats}) => {
   return (
 <ProfileWrap>
   <Description>
