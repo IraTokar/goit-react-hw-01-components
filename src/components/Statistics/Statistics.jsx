@@ -1,20 +1,24 @@
+import { StatisticsWrap, Title, List, Item, Label, Percentage } from './Statistics.styled'
+import { getRandomHexColor } from './getRandomHexColor'
+
+
 const Statistics = ({ stats, title }) => {
     return (
-        <section class="statistics">
-            <h2 class="title">{title}</h2>
+        <StatisticsWrap>
+            <Title>{title}</Title>
 
-            <ul class="stat-list">
+            <List>
                 {stats.map(stat =>{
                     return (
-                        <li key={stat.id}>
-                            <span >{stat.label}</span>
-                            <span >{stat.percentage}%</span>
-                        </li>
+                        <Item key={stat.id} style = {{backgroundColor: getRandomHexColor()}}>
+                            <Label >{stat.label}</Label>
+                            <Percentage >{stat.percentage}%</Percentage>
+                        </Item>
                     )
                     }
                     )}
-            </ul>
-        </section>
+            </List>
+        </StatisticsWrap>
     )
 }
 

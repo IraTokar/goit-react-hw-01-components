@@ -1,0 +1,55 @@
+import styled from 'styled-components';
+
+export const StatisticsWrap = styled.section`
+    width: 330px;
+    margin: 0 auto;
+    background-color: lightcyan;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+
+`;
+
+export const Title = styled.h2`
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: white;
+    font-size: 20px;
+    font-weight: 700;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+`;
+
+export const List = styled.ul`
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    
+`;
+
+export const Item = styled.li`
+    padding: 10px 5px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+`;
+
+export const Label = styled.span`
+    font-weight: 500;
+    font-size: 16px;
+`;
+
+export const Percentage = styled.span`
+    font-weight: 700;
+    font-size: 18px;
+    margin-top: 5px;
+`;
