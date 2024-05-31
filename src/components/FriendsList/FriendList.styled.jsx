@@ -11,6 +11,7 @@ export const Item = styled.li`
     background-color: lightcyan;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
+    margin-bottom: 15px;
     display: flex;
     padding: 10px;
     align-items: center;
