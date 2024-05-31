@@ -1,11 +1,15 @@
 import styled from 'styled-components';
 
-export const List = styled.li`
+export const List = styled.ul`
+  margin: 20px;
+`;
+
+
+export const Item = styled.li`
     width: 300px;
     margin: 0 auto;
     background-color: lightcyan;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    margin-bottom: 15px;
     border-radius: 10px;
     display: flex;
     padding: 10px;

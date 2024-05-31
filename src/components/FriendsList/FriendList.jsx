@@ -1,17 +1,20 @@
-import {List, StatusType, Avatar, Name} from './FriendList.styled'
+import {List} from './FriendList.styled'
+import FriendListitem from './FriendsListItem';
 
-const FriendList = ({ friends }) => {
-    return (
-        friends.map(({ avatar, name, isOnline, id }) => {
-            return (
-                <List key={id}>
-                    <StatusType statusType={isOnline}></StatusType>
-                    <Avatar src={avatar} alt="User avatar" width="48" />
-                    <Name>{name}</Name>
-                </List>
-                )
-            })
-        )   
-}
+const FriendList = ({ friends }) => (
+    <List>
+        {friends.map(({ avatar, name, isOnline, id }) => (
+            <FriendListitem
+                key={id}
+                avatar={avatar}
+                name={name}
+                isOnline={isOnline}
+            />
+        ))
+        }
+    </List>
+);
 
 export default FriendList;
+
+
